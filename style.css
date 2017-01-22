@@ -1,0 +1,41 @@
+h1{
+   text-align: center; 
+   
+}
+h2{
+    
+}
+body{
+    
+}
+.bts{
+    padding: 25px;
+    background: linear-gradient(-90deg, #00ffbf, #00cccc);
+    border-radius: 20px;
+    margin: 50px;
+    width: 500px;
+    box-shadow: 5px 5px #b3b3ff;
+
+
+}
+.pic1{
+    float: right;
+}
+
+.mx{
+    padding:25px;
+    background: linear-gradient(90deg, #00ffbf, #00cccc);
+    border-radius: 20px;
+    margin: 50px;
+    width: 500px;
+    float:right;
+    box-shadow: 5px 5px #b3b3ff;
+
+
+}
+.pic2{
+    float:left;
+}
+a{
+    color: #6600ff;
+}
