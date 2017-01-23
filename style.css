@@ -1,41 +1,74 @@
-h1{
-   text-align: center; 
-   
+h1 {
+    text-align: center;
+    text-shadow: 0 0 3px aqua, 0 0 3px white;
+    color: black;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 50px;
 }
-h2{
-    
+
+h2 {}
+
+body {
+    background-image: url(background1.png);
 }
-body{
-    
-}
-.bts{
+
+.bts {
     padding: 25px;
     background: linear-gradient(-90deg, #00ffbf, #00cccc);
     border-radius: 20px;
     margin: 50px;
-    width: 500px;
+    width: 550px;
     box-shadow: 5px 5px #b3b3ff;
-
-
-}
-.pic1{
     float: right;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 21px;
 }
 
-.mx{
-    padding:25px;
+#bts {
+    float: left;
+    transition: transform 2s;
+}
+
+#bts:hover {
+    transform: rotateZ(360deg);
+}
+
+.mx {
+    padding: 25px;
     background: linear-gradient(90deg, #00ffbf, #00cccc);
     border-radius: 20px;
     margin: 50px;
-    width: 500px;
-    float:right;
+    width: 650px;
+    float: left;
     box-shadow: 5px 5px #b3b3ff;
-
-
+    right: -1500px;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 21px;
 }
-.pic2{
-    float:left;
+
+p {
+    animation: slidein 3s ease-in;
 }
-a{
+
+@keyframes slidein {
+    from {
+        margin-left: 200%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#monstax {
+    transition: transform 2s;
+}
+
+#monstax:hover {
+    transform: rotateY(360deg);
+}
+
+a {
     color: #6600ff;
 }
