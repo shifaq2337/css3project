@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    text-shadow: 0 0 3px aqua, 0 0 3px white;
+    text-shadow: 0 0 3px aqua, 0 0 3px white;/* horizontal shadow vertical shadow blur effect and color, another shadow color*/
     color: black;
     font-family: 'IM Fell English SC', serif;
     font-size: 50px;
@@ -14,11 +14,12 @@ body {
 
 .bts {
     padding: 25px;
-    background: linear-gradient(-90deg, #00ffbf, #00cccc);
+    background: linear-gradient(-90deg, #00ffbf, #00cccc);/*background of div = linear gradient ( the angle switched the colors, from turquoise to mint color)*/
     border-radius: 20px;
+    /*produces rounded borders*/
     margin: 50px;
     width: 550px;
-    box-shadow: 5px 5px #b3b3ff;
+    box-shadow: 5px 5px #b3b3ff;/*the horizontal shadow and the vertical shadow specified to create div/box shadow*/
     float: right;
     font-family: 'IM Fell Double Pica', serif;
     font-size: 21px;
@@ -26,33 +27,34 @@ body {
 
 #bts {
     float: left;
-    transition: transform 2s;
+    transition: transform 2s;/*allows the rotation of picture to occur for 2s and then revert back to original position*/
 }
 
-#bts:hover {
-    transform: rotateZ(360deg);
+#bts:hover {/*when mouse is hovering on the picture*/
+    transform: rotateZ(360deg);/*changes the picture by rotating it 360 degrees around its Z-axis*/
 }
 
 .mx {
     padding: 25px;
-    background: linear-gradient(90deg, #00ffbf, #00cccc);
-    border-radius: 20px;
+    background: linear-gradient(90deg, #00ffbf, #00cccc);/*background of div = linear gradient (from mint color to turquoise)*/
+    border-radius: 20px;/*produces rounded borders*/
     margin: 50px;
     width: 650px;
     float: left;
-    box-shadow: 5px 5px #b3b3ff;
-    right: -1500px;
+    box-shadow: 5px 5px #b3b3ff;/*the horizontal shadow and the vertical shadow specified to create div/box shadow*/
     font-family: 'IM Fell Double Pica', serif;
     font-size: 21px;
 }
 
 p {
-    animation: slidein 3s ease-in;
+    animation: slidein 3s ease-in;/*animation = name of the animation, animation-duration = 3s, and the animation speed actually known as animation-timing-function = ease-in*/
 }
 
-@keyframes slidein {
+@keyframes slidein {/*a rule where you state how the animation changes from a certain style to another style at specified times*/
     from {
+        /*the pictures start off being in the right where they are not visibile to sliding in to view*/
         margin-left: 200%;
+        /*picture pushed from margin from left which causes picture to be in the right instead*/
         width: 300%;
     }
     to {
@@ -62,13 +64,14 @@ p {
 }
 
 #monstax {
-    transition: transform 2s;
+    transition: transform 2s;/*allows the rotation of picture to occur for 2s and then revert back to original position*/
 }
 
-#monstax:hover {
-    transform: rotateY(360deg);
+#monstax:hover {/*when mouse is hovering on the picture*/
+    transform: rotateY(360deg);/*changes the picture by rotating it 360 degrees around its y-axis*/
 }
 
 a {
     color: #6600ff;
+/*purple*/
 }
